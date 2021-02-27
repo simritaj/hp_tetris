@@ -24,10 +24,10 @@ class _RewardsState extends State<Rewards> {
     
 
     return Scaffold(
-      backgroundColor: Colors.amber[50],
+      backgroundColor: Color.fromARGB(255, 243, 243, 243),
       appBar: AppBar(
-        title: Text('Your Rewards!'),
-        backgroundColor: Colors.brown[100],
+        //title: Text('Your Rewards!'),
+        backgroundColor: Color.fromARGB(255, 243, 243, 243),
         elevation: 0.0,
         actions: <Widget>[
           FlatButton.icon(
@@ -49,7 +49,7 @@ class _RewardsState extends State<Rewards> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15.0),
             ),
-            color: Colors.blue,
+            color: Color.fromARGB(255, 81, 129, 212),
             elevation: 10,
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -63,9 +63,9 @@ class _RewardsState extends State<Rewards> {
                     children: <Widget>[
                       
                       FlatButton.icon(
-                        color: Colors.white,
-            icon: Icon(Icons.shopping_cart),
-            label: Text('HP Website'),
+                        color: Color.fromARGB(255, 251, 187, 45),
+            icon: Icon(Icons.shopping_cart, color: Colors.black),
+            label: Text('HP Website', style: TextStyle(color: Colors.black),),
             onPressed: _launchURL
                 ,
           ),
@@ -78,28 +78,31 @@ class _RewardsState extends State<Rewards> {
           SizedBox(height:10),
           Card(
             shape: RoundedRectangleBorder(
+              side: new BorderSide(color: Color.fromARGB(255, 81, 129, 212)),
               borderRadius: BorderRadius.circular(15.0),
             ),
-            color: Colors.pink,
+            color: Color.fromARGB(255, 243, 243, 243),
             elevation: 10,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 const ListTile(
+                  contentPadding: EdgeInsets.fromLTRB(20, 20, 20, 0),
                   leading: Icon(Icons.euro, size: 70),
                   title: Text('GET \$5 OFF YOUR NEXT PURCHASE',
-                      style: TextStyle(color: Colors.white)),
+                      style: TextStyle(color: Colors.black)),
 
                   subtitle:
-                      Text('worth 100 points', style: TextStyle(color: Colors.white)),
+                      Text('worth 100 points', style: TextStyle(color: Colors.grey)
+                      ),
                 ),
                 ButtonTheme.bar(
                   child: ButtonBar(
                     children: <Widget>[
                       FlatButton(
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 120, 157, 219),
                         child: const Text('Redeemed',
-                            style: TextStyle(color: Colors.black)),
+                            style: TextStyle(color: Colors.white)),
                         onPressed: () {},
                       ),
                     ],
@@ -111,25 +114,27 @@ class _RewardsState extends State<Rewards> {
           SizedBox(height: 10),
           Card(
             shape: RoundedRectangleBorder(
+              side: new BorderSide(color: Color.fromARGB(255, 81, 129, 212)),
               borderRadius: BorderRadius.circular(15.0),
             ),
-            color: Colors.pink,
+            color: Color.fromARGB(255, 243, 243, 243),
             elevation: 10,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 const ListTile(
+                  contentPadding: EdgeInsets.fromLTRB(20, 20, 20, 0),
                   leading: Icon(Icons.euro, size: 70),
                   title: Text('GET \$10 OFF ON YOUR NEXT PURCHASE',
-                      style: TextStyle(color: Colors.white)),
+                      style: TextStyle(color: Colors.black)),
                   subtitle:
-                      Text('worth 225 points', style: TextStyle(color: Colors.white)),
+                      Text('worth 225 points', style: TextStyle(color: Colors.grey)),
                 ),
                 ButtonTheme.bar(
                   child: ButtonBar(
                     children: <Widget>[
                       FlatButton(
-                        color: Colors.green,
+                        color: Color.fromARGB(255, 251, 187, 45),
                         child: const Text('Redeem',
                             style: TextStyle(color: Colors.white)),
                         onPressed: () {},
@@ -143,25 +148,27 @@ class _RewardsState extends State<Rewards> {
           SizedBox(height: 10),
           Card(
             shape: RoundedRectangleBorder(
+              side: new BorderSide(color: Color.fromARGB(255, 81, 129, 212)),
               borderRadius: BorderRadius.circular(15.0),
             ),
-            color: Colors.pink,
+            color: Color.fromARGB(255, 243, 243, 243),
             elevation: 10,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 const ListTile(
+                  contentPadding: EdgeInsets.fromLTRB(20, 20, 20, 0),
                   leading: Icon(Icons.mouse, size: 70),
                   title: Text('GET A FREE MOUSE ON YOUR NEXT PURCHASE',
-                      style: TextStyle(color: Colors.white)),
+                      style: TextStyle(color: Colors.black)),
                   subtitle:
-                      Text('worth 500 points', style: TextStyle(color: Colors.white)),
+                      Text('worth 500 points', style: TextStyle(color: Colors.grey)),
                 ),
                 ButtonTheme.bar(
                   child: ButtonBar(
                     children: <Widget>[
                       FlatButton(
-                        color: Colors.grey,
+                        color: Color.fromARGB(255, 37, 46, 68),
                         child: const Text('Need more points',
                             style: TextStyle(color: Colors.white)),
                         onPressed: () {},

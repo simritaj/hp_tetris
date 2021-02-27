@@ -24,9 +24,9 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[50],
+      backgroundColor: Color.fromARGB(255, 243, 243, 243),
       appBar: AppBar(
-        backgroundColor: Colors.amber[50],
+        backgroundColor: Color.fromARGB(255, 243, 243, 243),
         elevation: 0.0,
         //title: Text('Sign up to Brew Crew'),
       ),
@@ -69,7 +69,7 @@ class _RegisterState extends State<Register> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(80,0,0,0),
                 child: RaisedButton(
-                  color: Colors.pink[400],
+                  color: Color.fromARGB(255, 251, 187, 45),
                   child: Text(
                     'Register',
                     style: TextStyle(color: Colors.white),
@@ -86,12 +86,12 @@ class _RegisterState extends State<Register> {
                   }
                 ),
               ),
-              SizedBox(height: 12.0),
+              //SizedBox(height: 12.0),
               Text(
                 error,
                 style: TextStyle(color: Colors.red, fontSize: 14.0),
               ),
-              SizedBox(height: 20.0),
+              //SizedBox(height: 20.0),
               Padding(
                 padding: const EdgeInsets.fromLTRB(40,0,0,0),
                 child: Text(
@@ -103,7 +103,7 @@ class _RegisterState extends State<Register> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(80,0,0,0),
                 child: RaisedButton(
-                  color: Colors.lightBlue[300],
+                  color: Color.fromARGB(255, 120, 157, 219),
                   child: Text(
                     'Sign In',
                     style: TextStyle(color: Colors.white),

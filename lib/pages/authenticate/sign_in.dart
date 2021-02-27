@@ -28,9 +28,9 @@ class _SignInState extends State<SignIn> {
   Widget build(BuildContext context) {
     
     return Scaffold(
-      backgroundColor: Colors.amber[50],
+      backgroundColor: Color.fromARGB(255, 243, 243, 243),
       appBar: AppBar(
-        backgroundColor: Colors.amber[50],
+        backgroundColor: Color.fromARGB(255, 243, 243, 243),
         elevation: 0.0,
         //title: Text('Sign in to Brew Crew' ,style: TextStyle(color: Colors.indigo[900]),),
       ),
@@ -75,7 +75,7 @@ class _SignInState extends State<SignIn> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(80,0,0,0),
                 child: RaisedButton(
-                  color: Colors.pink[300],
+                  color: Color.fromARGB(255, 251, 187, 45),
                   child: Text(
                     'Sign In',
                     style: TextStyle(color: Colors.white),
@@ -109,7 +109,7 @@ class _SignInState extends State<SignIn> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(80,0,0,0),
                 child: RaisedButton(
-                  color: Colors.lightBlue[300],
+                  color: Color.fromARGB(255, 120, 157, 219),
                   child: Text(
                     'Sign Up',
                     style: TextStyle(color: Colors.white),
