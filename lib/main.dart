@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hp_tetris/pages/home/home.dart';
-import 'package:hp_tetris/pages/loading.dart';
-import 'package:hp_tetris/pages/login.dart';
 import 'package:hp_tetris/pages/user_board.dart';
 import 'package:hp_tetris/pages/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
