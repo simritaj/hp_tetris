@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hp_tetris/pages/authenticate/onboarding1.dart';
+import 'package:hp_tetris/pages/authenticate/onboarding2.dart';
 import 'package:hp_tetris/pages/home/home.dart';
 import 'package:hp_tetris/pages/user_board.dart';
 import 'package:hp_tetris/pages/wrapper.dart';
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
     return StreamProvider<TUser>.value(
       value: AuthService().user,
       child: MaterialApp(
-        home: Wrapper(),
+        home: OnBoarding1(),
         routes: {
           '/GameScreen': (context) => GameScreen(),
         },

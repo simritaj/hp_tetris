@@ -3,6 +3,7 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:hp_tetris/pages/linkedpages/leaderboard.dart';
 import 'package:hp_tetris/pages/linkedpages/rewards.dart';
+import 'package:hp_tetris/pages/linkedpages/share.dart';
 import 'package:hp_tetris/pages/linkedpages/upload.dart';
 import 'package:hp_tetris/services/auth.dart';
 import 'package:hp_tetris/elements/my_drawer.dart';
@@ -63,7 +64,10 @@ class Home extends StatelessWidget {
                     color: Color.fromARGB(255, 251, 187, 45),
                     icon: Icon(Icons.share, color: Colors.black,),
                     label: Text('Share', style: TextStyle(color: Colors.black),),
-                    onPressed: () async {},
+                    onPressed: () {Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Share()),
+            );},
                   ),
                     ],
                   ),
