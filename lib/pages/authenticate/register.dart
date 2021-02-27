@@ -46,7 +46,7 @@ class _RegisterState extends State<Register> {
             children: <Widget>[
               Text(
                 'Register',
-                style: TextStyle(color: Colors.black, fontSize: 34.0, fontWeight: FontWeight.bold),
+                style: TextStyle(color: Color.fromARGB(255, 37, 46, 68), fontSize: 34.0, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 20.0),
               TextFormField(

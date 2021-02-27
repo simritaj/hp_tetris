@@ -52,7 +52,7 @@ class _SignInState extends State<SignIn> {
             children: <Widget>[
               Text(
                 'Sign In',
-                style: TextStyle(color: Colors.black, fontSize: 34.0, fontWeight: FontWeight.bold),
+                style: TextStyle(color: Color.fromARGB(255, 37, 46, 68), fontSize: 34.0, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 20.0),
               TextFormField(

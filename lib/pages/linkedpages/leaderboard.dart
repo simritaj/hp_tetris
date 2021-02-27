@@ -30,7 +30,8 @@ class _LeaderBoardState extends State<LeaderBoard> {
             ),
           ],
         ),
-       body: Column(
+       body: 
+       Column(
          
       children: [
         SizedBox(height:20),
