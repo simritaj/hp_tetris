@@ -86,22 +86,51 @@ class _RewardsState extends State<Rewards> {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 const ListTile(
-                  leading: Icon(Icons.album, size: 70),
-                  title: Text('Heart Shaker',
+                  leading: Icon(Icons.euro, size: 70),
+                  title: Text('GET \$5 OFF YOUR NEXT PURCHASE',
                       style: TextStyle(color: Colors.white)),
+
                   subtitle:
-                      Text('TWICE', style: TextStyle(color: Colors.white)),
+                      Text('worth 100 points', style: TextStyle(color: Colors.white)),
                 ),
                 ButtonTheme.bar(
                   child: ButtonBar(
                     children: <Widget>[
                       FlatButton(
-                        child: const Text('Edit',
-                            style: TextStyle(color: Colors.white)),
+                        color: Colors.white,
+                        child: const Text('Redeemed',
+                            style: TextStyle(color: Colors.black)),
                         onPressed: () {},
                       ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 10),
+          Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            color: Colors.pink,
+            elevation: 10,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  leading: Icon(Icons.euro, size: 70),
+                  title: Text('GET \$10 OFF ON YOUR NEXT PURCHASE',
+                      style: TextStyle(color: Colors.white)),
+                  subtitle:
+                      Text('worth 225 points', style: TextStyle(color: Colors.white)),
+                ),
+                ButtonTheme.bar(
+                  child: ButtonBar(
+                    children: <Widget>[
                       FlatButton(
-                        child: const Text('Delete',
+                        color: Colors.green,
+                        child: const Text('Redeem',
                             style: TextStyle(color: Colors.white)),
                         onPressed: () {},
                       ),
@@ -122,58 +151,18 @@ class _RewardsState extends State<Rewards> {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 const ListTile(
-                  leading: Icon(Icons.album, size: 70),
-                  title: Text('Heart Shaker',
+                  leading: Icon(Icons.mouse, size: 70),
+                  title: Text('GET A FREE MOUSE ON YOUR NEXT PURCHASE',
                       style: TextStyle(color: Colors.white)),
                   subtitle:
-                      Text('TWICE', style: TextStyle(color: Colors.white)),
+                      Text('worth 500 points', style: TextStyle(color: Colors.white)),
                 ),
                 ButtonTheme.bar(
                   child: ButtonBar(
                     children: <Widget>[
                       FlatButton(
-                        child: const Text('Edit',
-                            style: TextStyle(color: Colors.white)),
-                        onPressed: () {},
-                      ),
-                      FlatButton(
-                        child: const Text('Delete',
-                            style: TextStyle(color: Colors.white)),
-                        onPressed: () {},
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(height: 10),
-          Card(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(15.0),
-            ),
-            color: Colors.pink,
-            elevation: 10,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                const ListTile(
-                  leading: Icon(Icons.album, size: 70),
-                  title: Text('Heart Shaker',
-                      style: TextStyle(color: Colors.white)),
-                  subtitle:
-                      Text('TWICE', style: TextStyle(color: Colors.white)),
-                ),
-                ButtonTheme.bar(
-                  child: ButtonBar(
-                    children: <Widget>[
-                      FlatButton(
-                        child: const Text('Edit',
-                            style: TextStyle(color: Colors.white)),
-                        onPressed: () {},
-                      ),
-                      FlatButton(
-                        child: const Text('Delete',
+                        color: Colors.grey,
+                        child: const Text('Need more points',
                             style: TextStyle(color: Colors.white)),
                         onPressed: () {},
                       ),
