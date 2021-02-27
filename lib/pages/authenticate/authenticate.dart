@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hp_tetris/pages/authenticate/onboarding1.dart';
 import 'package:hp_tetris/pages/authenticate/sign_in.dart';
 import 'package:hp_tetris/pages/authenticate/register.dart';
 

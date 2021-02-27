@@ -14,7 +14,6 @@ class _VerifiedState extends State<Verified> {
       child: Scaffold(
         backgroundColor: Color.fromARGB(255, 251, 187, 45),
         appBar: AppBar(
-          //title: Text('Home: Packtris'),
           backgroundColor: Color.fromARGB(255, 81, 129, 212),
           elevation: 0.0,
           actions: <Widget>[
@@ -31,13 +30,21 @@ class _VerifiedState extends State<Verified> {
           ],
         ),
        body: Container(
+      decoration: BoxDecoration(
+          image: DecorationImage(
+            colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop),
+            image: AssetImage('assets/verified.png'),
+            fit: BoxFit.fitHeight),
+        ),
 
        child: Column(
          crossAxisAlignment: CrossAxisAlignment.center,
          
       children: [
-        SizedBox(height:20),
-        Text('You have won 3 blocks!', style: TextStyle(color: Color.fromARGB(255, 243, 243, 243), fontWeight: FontWeight.bold)),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(50, 50, 50, 0),
+          child: Text('You have won 3 blocks!', style: TextStyle(fontSize: 30,color: Color.fromARGB(255, 243, 243, 243), fontWeight: FontWeight.bold)),
+        ),
        SizedBox(height: 30),
        //Image.asset('assets/board.png', height: 450,width: 600,),
        SizedBox(height: 30),
@@ -50,6 +57,7 @@ class _VerifiedState extends State<Verified> {
            child: Text('Play', style: TextStyle(fontSize: 20,
            color: Color.fromARGB(255, 243, 243, 243)))),
        ),
+       /*
        SizedBox(
          height: 50,
          width: 300,
@@ -64,6 +72,7 @@ class _VerifiedState extends State<Verified> {
            child: Text('Home', style: TextStyle(fontSize: 20,
            ))),
        ),
+       */
         
        ],)  
       )),

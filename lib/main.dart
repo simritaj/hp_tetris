@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hp_tetris/pages/authenticate/onboarding1.dart';
-import 'package:hp_tetris/pages/authenticate/onboarding2.dart';
-import 'package:hp_tetris/pages/home/home.dart';
-import 'package:hp_tetris/pages/user_board.dart';
-import 'package:hp_tetris/pages/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'package:hp_tetris/services/auth.dart';
 import 'package:hp_tetris/models/user.dart';
-import 'package:hp_tetris/pages/game_screen.dart';
 
 //void main() => runApp(MyApp());
 
@@ -26,9 +21,6 @@ class MyApp extends StatelessWidget {
       value: AuthService().user,
       child: MaterialApp(
         home: OnBoarding1(),
-        routes: {
-          '/GameScreen': (context) => GameScreen(),
-        },
       ),
     );
   }

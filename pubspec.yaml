@@ -60,6 +60,7 @@ flutter:
       - assets/ob1.png
       - assets/ob2.png
       - assets/share.png
+      - assets/verified.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
