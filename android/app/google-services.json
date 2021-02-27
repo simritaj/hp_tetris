@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "457421372880",
+    "project_id": "hp-tetris",
+    "storage_bucket": "hp-tetris.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457421372880:android:6860a0f7e79c7bfc8c8dd5",
+        "android_client_info": {
+          "package_name": "com.simrita.hp_tetris"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457421372880-3f31gmcv0kn7k8onielqvs7a79jl9te6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrtk8WLm-KCEh08f0OY6yLBArUOaPcNf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457421372880-3f31gmcv0kn7k8onielqvs7a79jl9te6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
