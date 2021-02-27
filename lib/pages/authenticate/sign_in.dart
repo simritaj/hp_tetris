@@ -13,6 +13,7 @@ class SignIn extends StatefulWidget {
 
 class _SignInState extends State<SignIn> {
 
+
   final AuthService _auth = AuthService();
   final _formKey = GlobalKey<FormState>();
   String error = '';
@@ -21,21 +22,36 @@ class _SignInState extends State<SignIn> {
   String email = '';
   String password = '';
 
+  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown[100],
+      backgroundColor: Colors.amber[50],
       appBar: AppBar(
-        backgroundColor: Colors.brown[400],
+        backgroundColor: Colors.amber[50],
         elevation: 0.0,
-        title: Text('Sign in to Brew Crew'),
+        //title: Text('Sign in to Brew Crew' ,style: TextStyle(color: Colors.indigo[900]),),
       ),
       body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop),
+            image: AssetImage('assets/hp_logo.png'),
+            fit: BoxFit.fitHeight),
+        ),
+                      
         padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
         child: Form(
           key: _formKey,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              Text(
+                'Sign In',
+                style: TextStyle(color: Colors.black, fontSize: 34.0, fontWeight: FontWeight.bold),
+              ),
               SizedBox(height: 20.0),
               TextFormField(
                 decoration: textInputDecoration.copyWith(hintText: 'HP Account Email'),
@@ -54,22 +70,25 @@ class _SignInState extends State<SignIn> {
                 },
               ),
               SizedBox(height: 20.0),
-              RaisedButton(
-                color: Colors.pink[400],
-                child: Text(
-                  'Sign In',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onPressed: () async {
-                  if(_formKey.currentState.validate()){
-                    dynamic result = await _auth.signInWithEmailAndPassword(email, password);
-                    if(result == null) {
-                      setState(() {
-                        error = 'Could not sign in with those credentials';
-                      });
+              Padding(
+                padding: const EdgeInsets.fromLTRB(80,0,0,0),
+                child: RaisedButton(
+                  color: Colors.pink[300],
+                  child: Text(
+                    'Sign In',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  onPressed: () async {
+                    if(_formKey.currentState.validate()){
+                      dynamic result = await _auth.signInWithEmailAndPassword(email, password);
+                      if(result == null) {
+                        setState(() {
+                          error = 'Could not sign in with those credentials';
+                        });
+                      }
                     }
                   }
-                }
+                ),
               ),
               SizedBox(height: 12.0),
               Text(
@@ -77,17 +96,24 @@ class _SignInState extends State<SignIn> {
                 style: TextStyle(color: Colors.red, fontSize: 14.0),
               ),
               SizedBox(height: 20.0),
-              Text(
-                'Do not have a HP Account? Sign up here' ,
-                style: TextStyle(color: Colors.black, fontSize: 14.0),
-              ),
-              RaisedButton(
-                color: Colors.pink[400],
+              Padding(
+                padding: const EdgeInsets.fromLTRB(40,0,0,0),
                 child: Text(
-                  'Register',
-                  style: TextStyle(color: Colors.white),
+                  'Do not have an HP Account?' ,
+                  style: TextStyle(color: Colors.black, fontSize: 14.0),
                 ),
-                onPressed: () => widget.toggleView()
+              ),
+              SizedBox(height: 15),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(80,0,0,0),
+                child: RaisedButton(
+                  color: Colors.lightBlue[300],
+                  child: Text(
+                    'Sign Up',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  onPressed: () => widget.toggleView()
+                ),
               ),
             ],
           ),
@@ -95,4 +121,5 @@ class _SignInState extends State<SignIn> {
       ),
     );
   }
+  
 }
