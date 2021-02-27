@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hp_tetris/pages/linkedpages/leaderboard.dart';
+import 'package:hp_tetris/pages/linkedpages/play.dart';
 import 'package:hp_tetris/pages/linkedpages/rewards.dart';
 import 'package:hp_tetris/pages/linkedpages/share.dart';
 import 'package:hp_tetris/pages/linkedpages/upload.dart';
@@ -80,7 +81,10 @@ class Home extends StatelessWidget {
             child: RaisedButton(
               color: Color.fromARGB(255, 120, 157, 219),
               child: Text('Play'),
-              onPressed: (){}),
+              onPressed: (){Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Play()),
+            );}),
           ),
           SizedBox(height:10),
           SizedBox(
