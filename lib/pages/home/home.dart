@@ -3,6 +3,7 @@ import 'package:hp_tetris/pages/linkedpages/leaderboard.dart';
 import 'package:hp_tetris/pages/linkedpages/play.dart';
 import 'package:hp_tetris/pages/linkedpages/rewards.dart';
 import 'package:hp_tetris/pages/linkedpages/share.dart';
+import 'package:hp_tetris/pages/linkedpages/sustainability.dart';
 import 'package:hp_tetris/pages/linkedpages/upload.dart';
 import 'package:hp_tetris/services/auth.dart';
 
@@ -56,7 +57,10 @@ class Home extends StatelessWidget {
                     color: Color.fromARGB(255, 251, 187, 45),
                     icon: Icon(Icons.eco, color: Colors.black,),
                     label: Text('HP Sustainability', style: TextStyle(color: Colors.black)),
-                    onPressed: () async {},
+                    onPressed: () {Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Sustainability()),
+            );},
                   ),
                        FlatButton.icon(
                     color: Color.fromARGB(255, 251, 187, 45),

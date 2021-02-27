@@ -32,7 +32,7 @@ class _NextBlockState extends State<NextBlock> {
               child: Container(
                 color: Colors.indigo[600],
                 child: Center(
-                  child: Provider.of<Data>(context, listen: false).getNextBlockWidget(),
+                  child: Provider.of<Data>(context).getNextBlockWidget(),
                 ),
               ),
             ),

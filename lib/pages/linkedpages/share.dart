@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hp_tetris/pages/home/home.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Share extends StatefulWidget {
   @override
@@ -7,6 +8,23 @@ class Share extends StatefulWidget {
 }
 
 class _ShareState extends State<Share> {
+   
+  _launchURL1() async {
+  const url = 'https://www.instagram.com/hp/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+  }
+  _launchURL2() async {
+  const url = 'https://www.facebook.com/HPsingapore/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+  }
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -40,7 +58,7 @@ class _ShareState extends State<Share> {
          width: 300,
          child: RaisedButton(
            color: Color.fromARGB(255, 251, 187, 45),
-           onPressed: null, 
+           onPressed: _launchURL1, 
            child: Text('Share on Instagram!', style: TextStyle(fontSize: 20,
            color: Color.fromARGB(255, 243, 243, 243)))),
        ),
@@ -50,7 +68,7 @@ class _ShareState extends State<Share> {
          width: 300,
          child: RaisedButton(
            color: Color.fromARGB(255, 251, 187, 45),
-           onPressed: null, 
+           onPressed: _launchURL2, 
            child: Text('Share on Facebook!', style: TextStyle(fontSize: 20,
            color: Color.fromARGB(255, 243, 243, 243)))),
        ),
