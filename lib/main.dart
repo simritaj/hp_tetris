@@ -6,13 +6,14 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'package:hp_tetris/services/auth.dart';
 import 'package:hp_tetris/models/user.dart';
+import 'package:hp_tetris/pages/game_screen.dart';
 
 //void main() => runApp(MyApp());
 
 void main() async {
-   WidgetsFlutterBinding.ensureInitialized();
-   await Firebase.initializeApp();
-   runApp(MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -23,6 +24,9 @@ class MyApp extends StatelessWidget {
       value: AuthService().user,
       child: MaterialApp(
         home: Wrapper(),
+        routes: {
+          '/GameScreen': (context) => GameScreen(),
+        },
       ),
     );
   }
