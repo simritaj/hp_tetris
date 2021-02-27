@@ -1,7 +1,7 @@
-class User {
+class TUser {
 
   final String uid;
   
-  User({ this.uid });
+  TUser({ this.uid });
 
 }
