@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:hp_tetris/pages/linkedpages/get_blocks.dart';
 import 'package:hp_tetris/pages/linkedpages/leaderboard.dart';
-import 'package:hp_tetris/pages/linkedpages/play.dart';
 import 'package:hp_tetris/pages/linkedpages/rewards.dart';
 import 'package:hp_tetris/pages/linkedpages/share.dart';
 import 'package:hp_tetris/pages/linkedpages/sustainability.dart';
-import 'package:hp_tetris/pages/linkedpages/upload.dart';
 import 'package:hp_tetris/services/auth.dart';
 
 class Home extends StatelessWidget {
@@ -80,50 +79,38 @@ class Home extends StatelessWidget {
           ),
           SizedBox(height:40),
           SizedBox(
-            height: 60,
+            height: 80,
             width: 200,
             child: RaisedButton(
               color: Color.fromARGB(255, 120, 157, 219),
-              child: Text('Play'),
+              child: Text('Play Tetrees!', style: TextStyle(fontSize: 20)),
               onPressed: (){Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Play()),
+              MaterialPageRoute(builder: (context) => GetBlocks()),
             );}),
           ),
-          SizedBox(height:10),
+          SizedBox(height:30),
           SizedBox(
-            height: 60,
+            height: 80,
             width: 200,
             child: RaisedButton(
               color: Color.fromARGB(255, 120, 157, 219),
-              child: Text('Rewards'),
+              child: Text('Rewards', style: TextStyle(fontSize: 20)),
               onPressed: (){Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => Rewards()),
             );}),
           ),
-          SizedBox(height:10),
+          SizedBox(height:30),
           SizedBox(
-            height: 60,
+            height: 80,
             width: 200,
             child: RaisedButton(
               color: Color.fromARGB(255, 120, 157, 219),
-              child: Text('LeaderBoard'),
+              child: Text('Leader Board',style: TextStyle(fontSize: 20)),
               onPressed: (){Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => LeaderBoard()),
-            );}),
-          ),
-          SizedBox(height:10),
-          SizedBox(
-            height: 60,
-            width: 200,
-            child: RaisedButton(
-              color: Color.fromARGB(255, 120, 157, 219),
-              child: Text('OCR'),
-              onPressed: (){Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Upload()),
             );}),
           ),
         ],

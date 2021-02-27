@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hp_tetris/pages/authenticate/onboarding2.dart';
-import 'package:hp_tetris/pages/home/home.dart';
 
 class OnBoarding1 extends StatefulWidget {
   @override
