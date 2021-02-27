@@ -26,6 +26,7 @@ class _SignInState extends State<SignIn> {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       backgroundColor: Colors.amber[50],
       appBar: AppBar(
@@ -41,6 +42,7 @@ class _SignInState extends State<SignIn> {
             fit: BoxFit.fitHeight),
         ),
                       
+        
         padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
         child: Form(
           key: _formKey,
@@ -90,12 +92,12 @@ class _SignInState extends State<SignIn> {
                   }
                 ),
               ),
-              SizedBox(height: 12.0),
+              //SizedBox(height: 12.0),
               Text(
                 error,
                 style: TextStyle(color: Colors.red, fontSize: 14.0),
               ),
-              SizedBox(height: 20.0),
+              //SizedBox(height: 20.0),
               Padding(
                 padding: const EdgeInsets.fromLTRB(40,0,0,0),
                 child: Text(
@@ -117,9 +119,9 @@ class _SignInState extends State<SignIn> {
               ),
             ],
           ),
-        ),
-      ),
-    );
+        )
+      ));
+    
   }
   
 }
