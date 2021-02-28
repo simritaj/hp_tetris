@@ -13,6 +13,7 @@ class Tetris extends StatefulWidget {
 
 class _TetrisState extends State<Tetris> {
   GlobalKey<GameState> _keyGame = GlobalKey();
+  //var number1 = 4;
 
   @override
   Widget build(BuildContext context) {

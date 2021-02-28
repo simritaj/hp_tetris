@@ -43,7 +43,7 @@ class _VerifiedState extends State<Verified> {
       children: [
         Padding(
           padding: const EdgeInsets.fromLTRB(50, 50, 50, 0),
-          child: Text('You have won 3 blocks!', style: TextStyle(fontSize: 30,color: Color.fromARGB(255, 243, 243, 243), fontWeight: FontWeight.bold)),
+          child: Text('You have won a new blocks', style: TextStyle(fontSize: 30,color: Color.fromARGB(255, 243, 243, 243), fontWeight: FontWeight.bold)),
         ),
        SizedBox(height: 30),
        //Image.asset('assets/board.png', height: 450,width: 600,),
@@ -54,7 +54,7 @@ class _VerifiedState extends State<Verified> {
          child: RaisedButton(
            color: Color.fromARGB(255, 37, 46, 68),
            onPressed: null, 
-           child: Text('Play', style: TextStyle(fontSize: 20,
+           child: Text('Play New Level!', style: TextStyle(fontSize: 20,
            color: Color.fromARGB(255, 243, 243, 243)))),
        ),
        /*

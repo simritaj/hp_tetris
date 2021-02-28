@@ -35,7 +35,7 @@ class GameState extends State<Game> {
   List<SubBlock> oldSubBlocks;
 
   Block getNewBlock() {
-    int blockType = Random().nextInt(3);
+    int blockType = Random().nextInt(7);
     int orientationIndex = Random().nextInt(4);
 
     switch (blockType) {
