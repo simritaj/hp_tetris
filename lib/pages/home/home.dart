@@ -83,7 +83,7 @@ class Home extends StatelessWidget {
             width: 200,
             child: RaisedButton(
               color: Color.fromARGB(255, 120, 157, 219),
-              child: Text('Play Tetrees!', style: TextStyle(fontSize: 20)),
+              child: Text('Play Tetrees!', style: TextStyle(fontSize: 20, color: Colors.white)),
               onPressed: (){Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => GetBlocks()),
@@ -95,7 +95,7 @@ class Home extends StatelessWidget {
             width: 200,
             child: RaisedButton(
               color: Color.fromARGB(255, 120, 157, 219),
-              child: Text('Rewards', style: TextStyle(fontSize: 20)),
+              child: Text('Rewards', style: TextStyle(fontSize: 20, color: Colors.white)),
               onPressed: (){Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => Rewards()),
@@ -107,7 +107,7 @@ class Home extends StatelessWidget {
             width: 200,
             child: RaisedButton(
               color: Color.fromARGB(255, 120, 157, 219),
-              child: Text('Leader Board',style: TextStyle(fontSize: 20)),
+              child: Text('Leader Board',style: TextStyle(fontSize: 20, color: Colors.white)),
               onPressed: (){Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => LeaderBoard()),

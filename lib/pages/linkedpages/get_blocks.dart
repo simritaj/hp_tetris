@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hp_tetris/pages/linkedpages/returnproduct.dart';
 import 'package:hp_tetris/pages/linkedpages/upload.dart';
 import 'package:hp_tetris/tetris/game_main.dart';
 
@@ -48,7 +49,11 @@ class _GetBlocksState extends State<GetBlocks> {
               child: RaisedButton(
                 color: Color.fromARGB(255, 251, 187, 45),
                 child: Text('Returned Products', style: TextStyle(color: Colors.white, fontSize: 20),),
-                onPressed: () {
+                onPressed:() {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ReturnProduct()),
+                    );
                   },),
             ),
             SizedBox(height: 10),

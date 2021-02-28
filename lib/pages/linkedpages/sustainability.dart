@@ -43,31 +43,12 @@ class _SustainabilityState extends State<Sustainability> {
                 padding: const EdgeInsets.all(30.0),
                 child: Image.asset(
                   'assets/ob1.png',
-                  height: 300,
-                  width: 300,
+                  height: 600,
+                  width: 500,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('All our packaging is made out of Seed Paper. Plant the packaging material after use to see your plant grow! \n Learn more about how to plant the seed paper from below - ',
-                style: TextStyle(fontSize: 20)),
-              ),
-              SizedBox(
-                height: 150,
-                child: Card(
-          semanticContainer: true,
-          clipBehavior: Clip.antiAliasWithSaveLayer,
-          child: Image.asset(
-            'assets/seedpaper.jpg',
-            fit: BoxFit.fill,
-          ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0),
-          ),
-          elevation: 5,
-          margin: EdgeInsets.all(2),
-        ),
-              ),
+              
+              
             ],
           ),
         ));
