@@ -37,7 +37,7 @@ class _GetBlocksState extends State<GetBlocks> {
                 onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Tetris()),
+                      MaterialPageRoute(builder: (context) => Tetris(seed: 5,)),
                     );
                   },),
             ),

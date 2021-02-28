@@ -63,6 +63,9 @@ flutter:
       - assets/share.png
       - assets/verified.png
       - assets/seedpaper.jpg
+      - assets/t.png
+      - assets/s.png
+      - assets/z.png
   #   - images/a_dot_ham.jpeg
 
 

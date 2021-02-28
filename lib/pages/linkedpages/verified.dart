@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hp_tetris/pages/home/home.dart';
+import 'package:hp_tetris/tetris/game_main.dart';
 
 
 class Verified extends StatefulWidget {
@@ -14,7 +15,7 @@ class _VerifiedState extends State<Verified> {
       child: Scaffold(
         backgroundColor: Color.fromARGB(255, 251, 187, 45),
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 81, 129, 212),
+          backgroundColor: Color.fromARGB(255, 251, 187, 45),
           elevation: 0.0,
           actions: <Widget>[
             FlatButton.icon(
@@ -30,30 +31,45 @@ class _VerifiedState extends State<Verified> {
           ],
         ),
        body: Container(
-      decoration: BoxDecoration(
-          image: DecorationImage(
-            colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop),
-            image: AssetImage('assets/verified.png'),
-            fit: BoxFit.fitHeight),
-        ),
 
        child: Column(
          crossAxisAlignment: CrossAxisAlignment.center,
          
       children: [
+        SizedBox(height: 100,),
         Padding(
           padding: const EdgeInsets.fromLTRB(50, 50, 50, 0),
-          child: Text('You have won a new blocks', style: TextStyle(fontSize: 30,color: Color.fromARGB(255, 243, 243, 243), fontWeight: FontWeight.bold)),
+          child: Text('You have won a new block!', textAlign: TextAlign.center,style: TextStyle(fontSize: 30,color: Colors.black, fontWeight: FontWeight.bold)),
         ),
        SizedBox(height: 30),
-       //Image.asset('assets/board.png', height: 450,width: 600,),
+       /*
+       Card(
+          semanticContainer: true,
+          clipBehavior: Clip.antiAliasWithSaveLayer,
+          child: Image.asset(
+            'assets/z.png',
+            fit: BoxFit.fill,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10.0),
+          ),
+          elevation: 5,
+          margin: EdgeInsets.all(2),
+        ),
+      */
+      Image.asset('assets/z.png', width: 150,height: 150,),
        SizedBox(height: 30),
        SizedBox(
          height: 50,
          width: 300,
          child: RaisedButton(
            color: Color.fromARGB(255, 37, 46, 68),
-           onPressed: null, 
+           onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Tetris(seed: 7,)),
+                    );
+                  }, 
            child: Text('Play New Level!', style: TextStyle(fontSize: 20,
            color: Color.fromARGB(255, 243, 243, 243)))),
        ),

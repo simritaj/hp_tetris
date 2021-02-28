@@ -15,8 +15,8 @@ const GAME_AREA_BORDER_WIDTH = 2.0;
 const SUB_BLOCK_EDGE_WIDTH = 2.0;
 
 class Game extends StatefulWidget {
-  Game({Key key}) : super(key: key);
-
+  Game({Key key, this.seed}) : super(key: key);
+  int seed;
   @override
   State<StatefulWidget> createState() => GameState();
 }
@@ -35,7 +35,7 @@ class GameState extends State<Game> {
   List<SubBlock> oldSubBlocks;
 
   Block getNewBlock() {
-    int blockType = Random().nextInt(7);
+    int blockType = Random().nextInt(widget.seed);
     int orientationIndex = Random().nextInt(4);
 
     switch (blockType) {

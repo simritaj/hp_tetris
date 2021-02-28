@@ -7,6 +7,8 @@ import 'block.dart';
 
 
 class Tetris extends StatefulWidget {
+  Tetris({this.seed});
+  int seed;
   @override
   State<StatefulWidget> createState() => _TetrisState();
 }
@@ -37,7 +39,7 @@ class _TetrisState extends State<Tetris> {
                       flex: 3,
                       child: Padding(
                         padding: EdgeInsets.fromLTRB(10.0, 10.0, 5.0, 10.0),
-                        child: Game(key: _keyGame),
+                        child: Game(key: _keyGame, seed:widget.seed),
                       ),
                     ),
                     Flexible(
