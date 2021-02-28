@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hp_tetris/pages/linkedpages/new_product.dart';
 import 'package:hp_tetris/pages/linkedpages/returnproduct.dart';
 import 'package:hp_tetris/pages/linkedpages/upload.dart';
 import 'package:hp_tetris/tetris/game_main.dart';
@@ -38,7 +39,7 @@ class _GetBlocksState extends State<GetBlocks> {
                 onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Tetris(seed: 5,)),
+                      MaterialPageRoute(builder: (context) => Scanning()),
                     );
                   },),
             ),

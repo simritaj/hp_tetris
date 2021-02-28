@@ -53,15 +53,7 @@ class _LeaderBoardState extends State<LeaderBoard> {
        SizedBox(height: 30),
        Image.asset('assets/board.png', height: 450,width: 600,),
        SizedBox(height: 30),
-       SizedBox(
-         height: 50,
-         width: 300,
-         child: RaisedButton(
-           color: Color.fromARGB(255, 251, 187, 45),
-           onPressed: null, 
-           child: Text('Play', style: TextStyle(fontSize: 20,
-           color: Color.fromARGB(255, 243, 243, 243)))),
-       ),
+       
         
        ],)  
       ),
